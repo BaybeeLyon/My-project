@@ -1,2 +1,2 @@
 # My-project
-My first repository on GitHub
+A submission for the Take A Climb Challenge.
