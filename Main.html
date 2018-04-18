@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jam's Address Book</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<script src="script.js"></script>
+
+</head>
+<body>
+	<div>
+		<header>
+			<h1><strong>Jam Jam's Address Book</strong></h1>
+			<div>
+			<ul class="options">
+				<li><input type="button"  value ="Search contacts"></li>
+				<li><input type="button" value ="Add Contact" ></li>
+				<li><input type="button" onclick="listContacts()" value ="View All Contacts" ></li>
+			</ul>
+		</div>
+		</header>
+	</div>
+	
+	<div>
+		<h2>Search Contacts</h2>
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Enter the name"><br>
+		<input type="submit" value="GO">
+	</div>
+	<div id="allContacts">
+		<h2>Contacts</h2>
+		<table id="myTable">
+			<tr>
+				<th>Contact Name</th>
+				<th colspan="2">Phone Number</th>
+				<th colspan="2">Email Address</th>
+			</tr>
+				
+			</tbody>
+		</table> 
+		
+	</div>
+		<h2>Add New Contact</h2>
+		<form id="new_contact">
+			First Name:
+			<input type="text" name="firstN" id="fname" placeholder="First Name"><br>
+			Last Name:
+			<input type="text" name="lastN" id="lname" placeholder="Last Name"><br>
+			Mobile Number:
+			<input type="text" name="mob" id="mob_num" placeholder="+234-8000000000"><br>
+			Phone Number:
+			<input type="text" name="pho" id="pho_num" placeholder="+234-8000000000"><br>
+			Email Address:
+			<input type="email" name="ema" id="e_mail" placeholder="domain@xyz.com"><br>
+			<ul class="btn_options">
+					<li><input type="button" onclick="insRow('myTable')" value="Save"></li>
+					<li><input type="button" onclick="discardEntry()" value="Discard"></li>
+			</ul>
+		</form>
+	<div>
+
+</body>
+</html>
